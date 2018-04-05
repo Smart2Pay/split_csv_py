@@ -11,5 +11,6 @@ except Exception:
     print(f'rows_per_csv {sys.argv[2]} must be an integer. e.g. 50000')
     sys.exit()
         
+
 splitter = Csv_Splitter(sys.argv[1],sys.argv[2])
 splitter.split()
