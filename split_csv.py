@@ -32,4 +32,4 @@ try:
 
     
 except FileNotFoundError:
-    print(f'Pula fisier {file_name}.csv')
+    print(f'Filename {file_name} was not found!')
