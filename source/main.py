@@ -12,5 +12,5 @@ except Exception:
     sys.exit()
         
 
-splitter = Csv_Splitter(sys.argv[1],sys.argv[2])
+splitter = CsvSplitter(sys.argv[1],sys.argv[2])
 splitter.split()
