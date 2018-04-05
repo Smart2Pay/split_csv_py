@@ -1,5 +1,5 @@
 import sys
-from Csv_Splitter import Csv_Splitter
+from CsvSplitter import CsvSplitter
 
 if len(sys.argv) < 3:
     print('usage: split_csv.exe {file_name} {rows_per_csv}')
