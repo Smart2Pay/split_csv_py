@@ -1,6 +1,6 @@
 #from pympler import asizeof
 
-class Csv_Splitter:
+class CsvSplitter:
 
     def __init__(self, file_name, rows_per_csv, buffer=10000, memory_hint=8196):
         self.file_name = file_name.split('.')[0]
