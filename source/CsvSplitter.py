@@ -28,7 +28,7 @@ class CsvSplitter:
             current_batch_buffer_line_read = 0
             stop_batch = False
             while not stop_batch:
-                current_lines = original_csv.readlines(self.memory_hint)
+                current_lines = original_csv.readlines(self.memory_hint if self.memory_hint <= self.rows_per_csv else self.rows_per_csv)
                 #print(f'Batch memory current_lines (bytes): {asizeof.asizeof(current_lines)}')
                 if not current_lines:
                     f.writelines(current_batch) 
